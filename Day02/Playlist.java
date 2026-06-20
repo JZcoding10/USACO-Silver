@@ -3,9 +3,9 @@ import java.util.*;
 public class Playlist {
     public static void main(String[] args) {
         Scanner read = new Scanner(System.in);
-        int hold = read.nextInt();
-        long[] songs = new long[hold];
-        for (int i = 0; i < hold; i++) {
+        int n = read.nextInt();
+        long[] songs = new long[n];
+        for (int i = 0; i < n; i++) {
             songs[i] = read.nextLong();
         }
 
@@ -13,7 +13,7 @@ public class Playlist {
         int left = 0;
         int max = 0;
 
-        for (int right = 0; right < hold; right++) {
+        for (int right = 0; right < n; right++) {
             while (set.contains(songs[right])) {
                 set.remove(songs[left]);
                 left++;
