@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main {
+public class Playlist {
     public static void main(String[] args) {
         Scanner read = new Scanner(System.in);
         int hold = read.nextInt();
